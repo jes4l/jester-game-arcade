@@ -29,7 +29,7 @@ elif chosenGame == "Dino":
     modelPath = "vision/Model/keras_model.h5.Dino"
     labelPath = "vision/Model/labels.txt.Dino"
 elif chosenGame == "ghostRunner":
-    labels = ["left", "right", "null"]
+    labels = ["left", "right"]
     controlSet = { "0": Key.left, "1": Key.right }
     modelPath = "vision/Model/keras_model.h5.ghostRunner"
     labelPath = "vision/Model/labels.txt.ghostRunner"
