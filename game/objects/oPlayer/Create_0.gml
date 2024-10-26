@@ -1,4 +1,9 @@
 // Create Event
+global.hp_jesal = 50;
+hp = global.hp_jesal;
+max_hp = global.hp_jesal;
+
+
 /// @description Insert description here
 moveSpeed = 1; // Initialize moveSpeed
 
@@ -18,3 +23,6 @@ startMovement = false; // Flag to start movement
 
 // Create Pickaxe
 heldItem = instance_create_layer(x, y, "Instances", oPickaxe);
+
+
+cooldownTime = 0;

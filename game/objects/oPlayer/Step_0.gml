@@ -1,13 +1,20 @@
 // Step Event
 /// @description Insert description here
 if (startMovement) { // Only run if movement is allowed
+	if (cooldownTime > 0) {
+        cooldownTime -= 1;
+    }
+
+	
     var current_pos = path_position;
 
     // Check for left and right key presses
     var leftKey = keyboard_check_pressed(vk_left);
     var rightKey = keyboard_check_pressed(vk_right);
 
-    currentPathIndex = switch_paths(currentPathIndex, current_pos);
+    if (cooldownTime == 0) {
+        currentPathIndex = switch_paths(currentPathIndex, current_pos);
+    }
 
     // Continue your existing movement and collision code
     var _right = keyboard_check(vk_right) or keyboard_check(ord("D"));
