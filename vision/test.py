@@ -15,6 +15,7 @@ folder = "data/left/el"
 counter = 0
 
 labels = ["left", "right", "null"]
+last_index = None
 
 while True:
     success, img = cap.read()
@@ -48,6 +49,10 @@ while True:
                 hGap = math.ceil((imgSize - hCal) / 2)
                 imgWhite[hGap:hCal + hGap, :] = imgResize
                 prediction, index = classifier.getPrediction(imgWhite, draw=False)
+
+            if index != last_index:
+                print(prediction, index)
+                last_index = index
 
             # Draw classification results
             cv2.rectangle(imgOutput, (x - offset, y - offset - 50), (x - offset + 90, y - offset - 50 + 50), (255, 0, 255), cv2.FILLED)

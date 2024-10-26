@@ -35,6 +35,7 @@ class CVHandler():
         self.counter =  0
 
         self.labels = ["left", "right", "null"]
+        self.last_index = None
 
 
 
@@ -89,6 +90,10 @@ class CVHandler():
                     # put image crop matrix inside image white matrix
                     imgWhite[hGap:hCal+hGap] = imgResize
                     prediction, index = self.classifier.getPrediction(imgWhite, draw=False)
+
+                if index != self.last_index:
+                    print(prediction, index)
+                    self.last_index = index
 
                 cv2.rectangle(imgOutput, (x - self.offset, y - self.offset - 50), (x - self.offset + 90, y - self.offset -50 + 50), (255, 0, 255), cv2.FILLED)
                 cv2.putText(imgOutput, self.labels[index],(x,y-26),cv2.FONT_HERSHEY_COMPLEX,1.7,(255,255,255),2)

@@ -1,11 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"oSetup",
+  "%Name":"oPlayer",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oSetup",
+  "name":"oPlayer",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,9 +33,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprSetup",
-    "path":"sprites/sprSetup/sprSetup.yy",
+    "name":"sPlayer_idle",
+    "path":"sprites/sPlayer_idle/sPlayer_idle.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
