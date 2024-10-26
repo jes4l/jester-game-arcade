@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b54e3f45-b23e-49b4-9bfb-6f2f95384c0d" name="Changes" comment="documentation: updated data with a,b,c,d,e and trained imgWhite to identify these gestures, customised UI with letters to show which hand sign it is">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../run_computer_vision.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../run_computer_vision.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../run_computer_vision.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../run_computer_vision.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../objects/oSetup/Create_0.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../../objects/oSetup/Create_0.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../vision/JesalPython/computer_vision_here.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../vision/JesalPython/controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../vision/JesalPython/cv_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../vision/JesalRunner.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2n4Xd9fvwe1vWrsmb0ei7VuBoeA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/jesal/Desktop/Project/diss/vision",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jesal\AppData\Local\Programs\Python\Python310\Lib\site-packages\google\protobuf\internal" />
+      <recent name="C:\Users\jesal\Desktop\diss" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python">
+      <module name="diss" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\jesal\Desktop\diss\.venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.10 (diss) (2)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="diss" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b54e3f45-b23e-49b4-9bfb-6f2f95384c0d" name="Changes" comment="" />
+      <created>1728233407720</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728233407720</updated>
+      <workItem from="1728233415574" duration="2654000" />
+      <workItem from="1728312577228" duration="8761000" />
+      <workItem from="1728416190288" duration="5526000" />
+      <workItem from="1728422012641" duration="5053000" />
+      <workItem from="1728546078151" duration="2105000" />
+      <workItem from="1729261636747" duration="114000" />
+      <workItem from="1729446159207" duration="1781000" />
+      <workItem from="1729454774353" duration="35000" />
+      <workItem from="1729454810060" duration="86000" />
+    </task>
+    <task id="LOCAL-00001" summary="code: mediapipe initial setup with left,right hand tracking and detection">
+      <created>1728379369989</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728379369989</updated>
+    </task>
+    <task id="LOCAL-00002" summary="code: created an image overlay of only the hands live position">
+      <created>1728380526233</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728380526233</updated>
+    </task>
+    <task id="LOCAL-00003" summary="code: adjusted image of hand height, width and scales automatically to fit in screen">
+      <created>1728383455772</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728383455772</updated>
+    </task>
+    <task id="LOCAL-00004" summary="documentation: updated Readme with game ideas">
+      <created>1728386018197</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728386018197</updated>
+    </task>
+    <task id="LOCAL-00005" summary="documentation: updated data with a,b,c,d,e and trained imgWhite to identify these gestures, customised UI with letters to show which hand sign it is">
+      <created>1728425531521</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728425531521</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="code: mediapipe initial setup with left,right hand tracking and detection" />
+    <MESSAGE value="code: created an image overlay of only the hands live position" />
+    <MESSAGE value="code: adjusted image of hand height, width and scales automatically to fit in screen" />
+    <MESSAGE value="documentation: updated Readme with game ideas" />
+    <MESSAGE value="documentation: updated data with a,b,c,d,e and trained imgWhite to identify these gestures, customised UI with letters to show which hand sign it is" />
+    <option name="LAST_COMMIT_MESSAGE" value="documentation: updated data with a,b,c,d,e and trained imgWhite to identify these gestures, customised UI with letters to show which hand sign it is" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/diss$detection_pb2.coverage" NAME="detection_pb2 Coverage Results" MODIFIED="1728422345506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Lib/site-packages/mediapipe/framework/formats" />
+    <SUITE FILE_PATH="coverage/diss$builder.coverage" NAME="builder Coverage Results" MODIFIED="1728421765295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/diss$Main.coverage" NAME="Main Coverage Results" MODIFIED="1728416833378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ComputerVision$test.coverage" NAME="test Coverage Results" MODIFIED="1729449191272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/diss$test.coverage" NAME="test Coverage Results" MODIFIED="1729261644902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/diss$data_collection.coverage" NAME="data_collection Coverage Results" MODIFIED="1728418799606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

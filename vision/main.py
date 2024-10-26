@@ -17,6 +17,7 @@ chosenGame = args.game
 print(f"[INFO] - Now playing... {chosenGame}.")
 
 labels = []
+controlSet = {}
 modelPath = ""
 labelPath = ""
 if chosenGame == "N/A":
@@ -24,12 +25,14 @@ if chosenGame == "N/A":
     exit(1)
 elif chosenGame == "Dino":
     labels = ["leftJump", "leftNothing", "rightJump", "rightNothing"]
+    controlSet = { "0": Key.space, "2": Key.space }
     modelPath = "vision/Model/keras_model.h5.Dino"
     labelPath = "vision/Model/labels.txt.Dino"
 elif chosenGame == "ghostRunner":
-    labels = ["leftJump", "leftNothing", "rightJump", "rightNothing"]
-    modelPath = "vision/Model/keras_model.h5.Dino"
-    labelPath = "vision/Model/labels.txt.Dino"
+    labels = ["left", "right", "null"]
+    controlSet = { "0": Key.left, "1": Key.right }
+    modelPath = "vision/Model/keras_model.h5.ghostRunner"
+    labelPath = "vision/Model/labels.txt.ghostRunner"
 
 # Model and detector init
 cap = cv2.VideoCapture(0)
@@ -64,10 +67,11 @@ while True:
                 imgWhite[:, wGap:wCal+wGap] = imgResize
                 prediction, index = classifier.getPrediction(imgWhite, draw=False)
                 print(prediction, index)
-                # hard coded for dino game
-                if index == 0 or index == 2:
-                    keyboard.press(Key.space)
-                    keyboard.release(Key.space)
+                for k, v in controlSet.items():
+                    # Dino game mapping
+                    if k == str(index):
+                        keyboard.press(v)
+                        keyboard.release(v)
             else:
                 k = imgSize/w
                 hCal = math.ceil(k * h)
