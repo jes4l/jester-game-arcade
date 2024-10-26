@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oCastle",
+  "%Name":"oEnemyBoss",
   "eventList":[],
   "managed":true,
-  "name":"oCastle",
+  "name":"oEnemyBoss",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCastle",
-    "path":"sprites/sCastle/sCastle.yy",
+    "name":"sEnemyBoss",
+    "path":"sprites/sEnemyBoss/sEnemyBoss.yy",
   },
   "spriteMaskId":null,
   "visible":true,

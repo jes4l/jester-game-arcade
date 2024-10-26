@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oCastle",
-  "eventList":[],
+  "%Name":"oEnemy",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oCastle",
+  "name":"oEnemy",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCastle",
-    "path":"sprites/sCastle/sCastle.yy",
+    "name":"sEnemy",
+    "path":"sprites/sEnemy/sEnemy.yy",
   },
   "spriteMaskId":null,
   "visible":true,
