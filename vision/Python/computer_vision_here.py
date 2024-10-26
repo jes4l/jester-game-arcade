@@ -34,8 +34,8 @@ class CVHandler():
         self.folder = "../data/left/el"
         self.counter =  0
 
-        self.labels = ["al", "bl", "cl", "dl", "el"]
-        
+        self.labels = ["left", "right", "null"]
+
 
 
     def send_messages(self, queue) -> None:
@@ -50,7 +50,7 @@ class CVHandler():
             time.sleep(0.01)
 
     def get_sign(self) -> int:
-        
+
         success, img = self.cap.read()
         imgOutput = img.copy()
         hands, img = self.detector.findHands(img) # creates dots on hands
@@ -63,44 +63,46 @@ class CVHandler():
             imgWhite = np.ones((self.imgSize, self.imgSize, 3),np.uint8)*255
             imgCrop = img[y - self.offset:y + h + self.offset, x - self.offset:x + w + self.offset]
 
-            imgCropShape = imgCrop.shape
+            if imgCrop.size > 0:
+                aspectRatio = h / w
 
-            aspectRatio = h/w
 
-            if aspectRatio >1:
-                k = self.imgSize/h
-                wCal = math.ceil(k * w)
-                imgResize = cv2.resize(imgCrop, (wCal, self.imgSize))
-                imgResizeShape = imgResize.shape
-                wGap = math.ceil((self.imgSize - wCal)/2)
-                # put image crop matrix inside image white matrix
-                imgWhite[:, wGap:wCal+wGap] = imgResize
-                prediction, index = self.classifier.getPrediction(imgWhite, draw=False)
-                #print(prediction, index)
 
-            else:
-                k = self.imgSize/w
-                hCal = math.ceil(k * h)
-                imgResize = cv2.resize(imgCrop, (self.imgSize, hCal))
-                imgResizeShape = imgResize.shape
-                hGap = math.ceil((self.imgSize - hCal)/2)
-                # put image crop matrix inside image white matrix
-                imgWhite[hGap:hCal+hGap] = imgResize
-                prediction, index = self.classifier.getPrediction(imgWhite, draw=False)
 
-            cv2.rectangle(imgOutput, (x - self.offset, y - self.offset - 50), (x - self.offset + 90, y - self.offset -50 + 50), (255, 0, 255), cv2.FILLED)
-            cv2.putText(imgOutput, self.labels[index],(x,y-26),cv2.FONT_HERSHEY_COMPLEX,1.7,(255,255,255),2)
-            cv2.rectangle(imgOutput, (x - self.offset,y - self.offset), (x + w+self.offset, y + h+self.offset), (255,0,255), 4)
+                if aspectRatio >1:
+                    k = self.imgSize/h
+                    wCal = math.ceil(k * w)
+                    imgResize = cv2.resize(imgCrop, (wCal, self.imgSize))
+                    imgResizeShape = imgResize.shape
+                    wGap = math.ceil((self.imgSize - wCal)/2)
+                    # put image crop matrix inside image white matrix
+                    imgWhite[:, wGap:wCal+wGap] = imgResize
+                    prediction, index = self.classifier.getPrediction(imgWhite, draw=False)
+                    #print(prediction, index)
 
-            cv2.imshow("imageCrop", imgCrop)
-            cv2.imshow("imageWhite", imgWhite)
+                else:
+                    k = self.imgSize/w
+                    hCal = math.ceil(k * h)
+                    imgResize = cv2.resize(imgCrop, (self.imgSize, hCal))
+                    imgResizeShape = imgResize.shape
+                    hGap = math.ceil((self.imgSize - hCal)/2)
+                    # put image crop matrix inside image white matrix
+                    imgWhite[hGap:hCal+hGap] = imgResize
+                    prediction, index = self.classifier.getPrediction(imgWhite, draw=False)
 
-            cv2.waitKey(1)
+                cv2.rectangle(imgOutput, (x - self.offset, y - self.offset - 50), (x - self.offset + 90, y - self.offset -50 + 50), (255, 0, 255), cv2.FILLED)
+                cv2.putText(imgOutput, self.labels[index],(x,y-26),cv2.FONT_HERSHEY_COMPLEX,1.7,(255,255,255),2)
+                cv2.rectangle(imgOutput, (x - self.offset,y - self.offset), (x + w+self.offset, y + h+self.offset), (255,0,255), 4)
 
-            #print(f"prediction : {prediction} index :{index} imgoutput: {imgOutput}")
+                cv2.imshow("imageCrop", imgCrop)
+                cv2.imshow("imageWhite", imgWhite)
 
-            return index
-        
+                cv2.waitKey(1)
+
+                #print(f"prediction : {prediction} index :{index} imgoutput: {imgOutput}")
+
+                return index
+
 
         cv2.imshow("Image",imgOutput)
         cv2.waitKey(1)
