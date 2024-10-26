@@ -26,6 +26,10 @@ elif chosenGame == "Dino":
     labels = ["leftJump", "leftNothing", "rightJump", "rightNothing"]
     modelPath = "vision/Model/keras_model.h5.Dino"
     labelPath = "vision/Model/labels.txt.Dino"
+elif chosenGame == "ghostRunner":
+    labels = ["leftJump", "leftNothing", "rightJump", "rightNothing"]
+    modelPath = "vision/Model/keras_model.h5.Dino"
+    labelPath = "vision/Model/labels.txt.Dino"
 
 # Model and detector init
 cap = cv2.VideoCapture(0)
