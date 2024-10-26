@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpoOOOky ArCaDe</title>
-    <!-- Link to CSS file with url_for -->
     <link rel="stylesheet" href="{{ url_for('static', filename='spooky.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&display=swap">
 </head>
 <body>
     <h1>🎃 Spooky Dino Game 🎃</h1>
+    <p>To play, hold your fist upwards infront of your webcam. To make the dino jump over obstacles, quickly open and close your hand!<p>
+    <img src="{{ url_for('static', filename='dino_thumb.gif') }}" alt="Dino game thumbnail">
     <form action="/run-dino" method="post">
         <button type="submit">BOO!</button>
     </form>
-    <!-- Flashlight overlay -->
     <div id="flashlight-overlay"></div>
-    <!-- Link to JavaScript file with url_for -->
     <script src="{{ url_for('static', filename='flashlight.js') }}"></script>
 </body>
 </html>
