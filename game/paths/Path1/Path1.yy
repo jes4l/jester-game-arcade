@@ -1,0 +1,18 @@
+{
+  "$GMPath":"",
+  "%Name":"Path1",
+  "closed":false,
+  "kind":0,
+  "name":"Path1",
+  "parent":{
+    "name":"slgame",
+    "path":"slgame.yyp",
+  },
+  "points":[
+    {"speed":100.0,"x":0.0,"y":240.0,},
+    {"speed":100.0,"x":2048.0,"y":240.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
