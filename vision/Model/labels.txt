@@ -1,5 +1,4 @@
-0 al
-1 bl
-2 cl
-3 dl
-4 el
+0 leftJump
+1 leftNothing
+2 rightJump
+3 rightNothing
