@@ -1,1 +1,0 @@
-path_start(Path5, 1, path_action_restart, true);

@@ -1,12 +1,20 @@
+// Create Event
 /// @description Insert description here
-// You can write your code in this editor
+moveSpeed = 1; // Initialize moveSpeed
 
-// properties
-moveSpeed = 1;
+// Initialize global.msg
+global.msg = ""; // Use an empty string instead of null
 
-// variables
+// Choose the path immediately
+currentPathIndex = irandom_range(1, 3);
+
+// Set a delay before starting the path
+alarm[0] = room_speed * 2; // Set alarm for 3 seconds
+
+// Variables
 moveX = 0;
 moveY = 0;
+startMovement = false; // Flag to start movement
 
 // Create Pickaxe
 heldItem = instance_create_layer(x, y, "Instances", oPickaxe);
