@@ -12,10 +12,10 @@ PATH_TO_VIS = os.path.join(os.getcwd(), "vision/main.py")
 def index():
     return render_template_string(open("front-end/public/index.html").read())
 
-@app.route("/run-python", methods=["POST"])
+@app.route("/run-dino", methods=["POST"])
 def run_exe():
     try:
-        command = f"source {PATH_TO_VENV} && python {PATH_TO_VIS} &"
+        command = f"source {PATH_TO_VENV} && python {PATH_TO_VIS} -g Dino &"
         subprocess.run(command, shell=True, check=True)
         return redirect("https://chromedino.com/")
     except subprocess.CalledProcessError as e:

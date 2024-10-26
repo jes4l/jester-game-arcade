@@ -1,3 +1,4 @@
+import argparse
 import cv2
 from cvzone.HandTrackingModule import HandDetector
 from cvzone.ClassificationModule import Classifier
@@ -7,14 +8,33 @@ import time
 
 from pynput.keyboard import Key, Controller
 
+
+# Arg parse
+parser = argparse.ArgumentParser(description="spookyArcadeVis")
+parser.add_argument('-g', action="store", dest="game", default="N/A")
+args = parser.parse_args()
+chosenGame = args.game
+print(f"[INFO] - Now playing... {chosenGame}.")
+
+labels = []
+modelPath = ""
+labelPath = ""
+if chosenGame == "N/A":
+    print("[ERROR] - No game chosen?")
+    exit(1)
+elif chosenGame == "Dino":
+    labels = ["leftJump", "leftNothing", "rightJump", "rightNothing"]
+    modelPath = "vision/Model/keras_model.h5.Dino"
+    labelPath = "vision/Model/labels.txt.Dino"
+
+# Model and detector init
 cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=1)
-classifier = Classifier("vision/Model/keras_model.h5", "vision/Model/labels.txt")
+classifier = Classifier(modelPath, labelPath)
 offset = 20
 imgSize = 300
 keyboard = Controller()
 
-labels = ["leftJump", "leftNothing", "rightJump", "rightNothing"]
 while True:
     success, img = cap.read()
     imgOutput = img.copy()
