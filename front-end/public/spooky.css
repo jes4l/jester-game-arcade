@@ -33,29 +33,44 @@ body {
     transition: transform 0.3s ease;
 }
 
+#arcade-ghostRunner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+    transition: transform 0.3s ease;
+}
+
 #arcade-dino:hover {
     transform: scale(1.05);
 }
 
-#arcade-dino h1 {
+#arcade-ghostRunner:hover {
+    transform: scale(1.05);
+}
+
+h1 {
     font-size: 1.8em;
     color: #ff4d4d;
     margin: 10px 0;
 }
 
-#arcade-dino h4 {
+h4 {
     margin: 5px 0;
     color: #ccc;
 }
 
-#arcade-dino img {
+img {
     width: 80%;
-    height: auto;
+    height: 40%;
     border-radius: 50%;
     margin: 15px 0;
 }
 
-#arcade-dino button {
+button {
     font-size: 1.2em;
     padding: 10px 20px;
     background-color: #ff4d4d;
@@ -66,7 +81,7 @@ body {
     box-shadow: 0 0 10px rgba(255, 77, 77, 0.8);
 }
 
-#arcade-dino button:hover {
+button:hover {
     background-color: #ff1a1a;
 }
 
