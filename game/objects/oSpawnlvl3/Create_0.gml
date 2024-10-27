@@ -7,6 +7,7 @@ spawn_rate = 1 * room_speed;
 alarm[0] = 1;
 
 
+// G
 
 /*
 //test
@@ -19,11 +20,11 @@ global.spd = random_range(1.5, 1.9);
 
 
 // oEnemyBoss
-global.hp_homelander = 200;
-global.spd_homelander = random_range(1.3, 1.6);
-spawn_amount_homelander = 20;
-spawn_count_homelander = 0;
-spawn_rate_homelander = 1 * room_speed;
+global.hp_ghost = 200;
+global.spd_ghost = random_range(1.3, 1.6);
+spawn_amount_ghost = 25;
+spawn_count_ghost = 0;
+spawn_rate_ghost = 1 * room_speed;
 
 
 // Countdown

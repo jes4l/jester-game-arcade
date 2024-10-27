@@ -3,6 +3,7 @@ global.hp_jesal = 50;
 hp = global.hp_jesal;
 max_hp = global.hp_jesal;
 
+
 timer = 0;
 /// @description Insert description here
 moveSpeed = 1; // Initialize moveSpeed
@@ -15,6 +16,10 @@ currentPathIndex = irandom_range(0, 3);
 
 // Create Event
 global.levelUp = false; // Initialize levelUp
+
+global.canLevelUp = false;
+
+global.canLevelUpone = false;
 // Spikes
 in_contact_with_spikes_lava = false;
 

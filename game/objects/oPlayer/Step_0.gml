@@ -13,6 +13,11 @@ if (global.life <= 0) {
 	}
 }
 
+if (global.level == 4) {
+    room_goto(rmWin);
+}
+
+
 if (!place_meeting(x, y, oReglava)) {
     in_contact_with_spikes_lava = false;
 }
