@@ -1,0 +1,15 @@
+{
+  "$GMPath":"",
+  "%Name":"Path9",
+  "closed":false,
+  "kind":0,
+  "name":"Path9",
+  "parent":{
+    "name":"Objects",
+    "path":"folders/Objects.yy",
+  },
+  "points":[],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
