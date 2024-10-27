@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oBulletShrapnel_1",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Object32",
+  "eventList":[],
   "managed":true,
-  "name":"oBulletShrapnel_1",
+  "name":"Object32",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tower3",
-    "path":"folders/Objects/Tower/Tower3.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sTower",
+    "path":"sprites/sTower/sTower.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -13,6 +13,12 @@ if (global.life <= 0) {
 	}
 }
 	
+// spikes
+if (!place_meeting(x, y, Object23)) {
+    in_contact_with_wall = false;
+}
+	
+	
     var current_pos = path_position;
 
     // Check for left and right key presses

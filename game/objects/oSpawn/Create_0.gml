@@ -1,7 +1,7 @@
 // In the Create event of oSpawn or a global initialization script
 global.message_set = false;
 
-spawn_amount = 5;
+spawn_amount = 10;
 spawn_count = 0;
 spawn_rate = 1 * room_speed;
 alarm[0] = 1;
@@ -11,7 +11,7 @@ alarm[1] = room_speed * 5;
 global.life_max = 3;
 global.level = 1;
 global.life = 3;
-global.coins = 1000; 
+global.coins = 0; 
 
 /*
 //test
@@ -20,7 +20,8 @@ global.coins += 9000;
 
 // oEnemy
 global.hp = 50;
-global.spd = 1;
+global.spd = random_range(1.2, 1.5);
+
 
 // oEnemyBoss
 global.hp_boss = 200;

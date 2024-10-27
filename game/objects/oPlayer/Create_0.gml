@@ -13,8 +13,12 @@ global.msg = ""; // Use an empty string instead of null
 // Choose the path immediately
 currentPathIndex = irandom_range(0, 3);
 
+// Create Event
+global.levelUp = false; // Initialize levelUp
 
 
+// wall
+in_contact_with_wall = false;
 
 // Set a delay before starting the path
 alarm[0] = room_speed * 2; // Set alarm for 3 seconds
