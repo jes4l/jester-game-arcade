@@ -7,9 +7,9 @@ spawn_rate = 1 * room_speed;
 alarm[0] = 1;
 
 // Game
-global.life_max = 30;
+global.life_max = 3;
 global.level = 1;
-global.life = 30;
+global.life = 3;
 global.coins = 0; 
 
 /*

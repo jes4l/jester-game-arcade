@@ -1,6 +1,6 @@
 // Create Event
-box_width = 35;
-box_height = 18;
+box_width = 40;
+box_height = 22;
 
 // Center horizontally
 x1 = (room_width - box_width) / 2;
