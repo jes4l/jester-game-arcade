@@ -15,7 +15,8 @@ currentPathIndex = irandom_range(0, 3);
 
 // Create Event
 global.levelUp = false; // Initialize levelUp
-
+// Spikes
+in_contact_with_spikes_lava = false;
 
 // wall
 in_contact_with_wall = false;

@@ -12,6 +12,11 @@ if (global.life <= 0) {
         instance_destroy();
 	}
 }
+
+if (!place_meeting(x, y, oReglava)) {
+    in_contact_with_spikes_lava = false;
+}
+
 	
 // spikes
 if (!place_meeting(x, y, Object23)) {

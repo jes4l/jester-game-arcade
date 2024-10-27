@@ -1,4 +1,5 @@
-// Step Event or another appropriate event
-if (global.level == 3) { // Add conditions as needed
-    global.levelUp = false; // Allows increasing to the next level on the next collision
+
+timer += 1;
+if (timer >= 1 * room_speed) {
+    room_goto(rmWin);
 }

@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oCactus",
+  "%Name":"Object53",
   "eventList":[],
   "managed":true,
-  "name":"oCactus",
+  "name":"Object53",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCactus",
-    "path":"sprites/sCactus/sCactus.yy",
+    "name":"sTowerWater",
+    "path":"sprites/sTowerWater/sTowerWater.yy",
   },
   "spriteMaskId":null,
   "visible":true,
