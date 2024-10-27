@@ -15,7 +15,7 @@ def index():
 @app.route("/run-dino", methods=["POST"])
 def run_dino():
     try:
-        command = f"source {PATH_TO_VENV} && python {PATH_TO_VIS} -g Dino &"
+        command = f"bash -c 'source {PATH_TO_VENV} && python {PATH_TO_VIS} -g Dino &'"
         subprocess.run(command, shell=True, check=True)
         return redirect("https://chromedino.com/")
     except subprocess.CalledProcessError as e:
@@ -27,7 +27,7 @@ def run_dino():
 def run_ghostRunners():
     try:
         #command = f"chmod +x ./games/ghost_runner.exe && ./games/ghost_runner.exe && python {PATH_TO_VIS} -g ghostRunner &"
-        command = f"source {PATH_TO_VENV} && python {PATH_TO_VIS} -g ghostRunner &"
+        command = f"bash -c 'source {PATH_TO_VENV} && python {PATH_TO_VIS} -g ghostRunnerz'"
         subprocess.Popen("./games/slgame.exe")
         subprocess.run(command, shell=True, check=True)
         return render_template_string(open("front-end/public/index.html").read())
