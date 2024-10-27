@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oLightning",
+  "%Name":"oCactus",
   "eventList":[],
   "managed":true,
-  "name":"oLightning",
+  "name":"oCactus",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sLightning",
-    "path":"sprites/sLightning/sLightning.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

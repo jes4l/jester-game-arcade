@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oLightning",
-  "eventList":[],
+  "%Name":"Object245",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oGhost","path":"objects/oGhost/oGhost.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oLightning",
+  "name":"Object245",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,9 +30,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sLightning",
-    "path":"sprites/sLightning/sLightning.yy",
+    "name":"sLvl3",
+    "path":"sprites/sLvl3/sLvl3.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
