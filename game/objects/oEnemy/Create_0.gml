@@ -1,6 +1,6 @@
 // Create Event
 /// @description Choose a random path for the object to follow
-var randomPath = irandom_range(1, 3);
+randomPath = irandom_range(1, 3); // Store as an instance variable
 
 // Start the selected path
 switch (randomPath) {

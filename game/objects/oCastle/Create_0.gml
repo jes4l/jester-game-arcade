@@ -3,7 +3,7 @@
 
 // Create enemies
 var enemy1 = instance_create_layer(x, y, "Instances", oEnemy1);
-var enemy2 = instance_create_layer(x, y, "Instances", oEnemyGhost1);
+var enemy2 = instance_create_layer(x, y, "Instances", oGhost1);
 var enemy3 = instance_create_layer(x, y, "Instances", oEnemyHomelander1);
 
 // Start enemies on their respective paths

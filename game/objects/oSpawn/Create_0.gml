@@ -1,16 +1,15 @@
 // In the Create event of oSpawn or a global initialization script
 global.message_set = false;
 
-spawn_amount = 10;
+spawn_amount = 15;
 spawn_count = 0;
 spawn_rate = 1 * room_speed;
 alarm[0] = 1;
-alarm[1] = room_speed * 5;
 
 // Game
-global.life_max = 3;
+global.life_max = 30;
 global.level = 1;
-global.life = 3;
+global.life = 30;
 global.coins = 0; 
 
 /*

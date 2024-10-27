@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oEnemyGhost1",
+  "%Name":"oStone",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oEnemyGhost1",
+  "name":"oStone",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sEnemyGhost",
-    "path":"sprites/sEnemyGhost/sEnemyGhost.yy",
+    "name":"sStone",
+    "path":"sprites/sStone/sStone.yy",
   },
   "spriteMaskId":null,
   "visible":true,

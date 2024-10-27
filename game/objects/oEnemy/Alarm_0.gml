@@ -1,3 +1,5 @@
-// In the Alarm 0 event
-path_start(Path1, global.spd, 0, 1);
+// Alarm[0] Event
+/// @description Insert description here
+var paths = [Path1, Path2, Path3];
+path_start(paths[randomPath - 1], global.spd, path_action_continue, true);
 path_position = stored_position; // Set the path position to the stored value
