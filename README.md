@@ -1,5 +1,7 @@
-# HackNotts 2024
+# HackNotts Oct 2024
+Create anything, with a halloween twist
 
+### Requirements
 - python 3.9.19
 - tensorflow 2.8.1
 
