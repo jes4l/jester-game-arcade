@@ -3,7 +3,7 @@ global.hp_jesal = 50;
 hp = global.hp_jesal;
 max_hp = global.hp_jesal;
 
-
+timer = 0;
 /// @description Insert description here
 moveSpeed = 1; // Initialize moveSpeed
 
@@ -11,7 +11,10 @@ moveSpeed = 1; // Initialize moveSpeed
 global.msg = ""; // Use an empty string instead of null
 
 // Choose the path immediately
-currentPathIndex = irandom_range(1, 3);
+currentPathIndex = irandom_range(0, 3);
+
+
+
 
 // Set a delay before starting the path
 alarm[0] = room_speed * 2; // Set alarm for 3 seconds

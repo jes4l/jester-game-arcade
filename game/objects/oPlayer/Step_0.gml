@@ -5,6 +5,13 @@ if (startMovement) { // Only run if movement is allowed
         cooldownTime -= 1;
     }
 
+if (global.life <= 0) {
+	timer += 1;
+    if (timer >= 1 * room_speed) {
+		room_goto(rmEnd);
+        instance_destroy();
+	}
+}
 	
     var current_pos = path_position;
 
