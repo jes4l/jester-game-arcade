@@ -1,0 +1,100 @@
+body {
+    font-family: 'Creepster', sans-serif;
+    background-color: #000;
+    color: #ff4d4d;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#arcade-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#arcade-dino {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+    transition: transform 0.3s ease;
+}
+
+#arcade-ghostRunner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+    transition: transform 0.3s ease;
+}
+
+#arcade-dino:hover {
+    transform: scale(1.05);
+}
+
+#arcade-ghostRunner:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #ff4d4d;
+    margin: 10px 0;
+}
+
+h4 {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+img {
+    width: 80%;
+    height: 40%;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.8);
+}
+
+button:hover {
+    background-color: #ff1a1a;
+}
+
+#flashlight-overlay {
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle 50px at center, transparent 100px, rgba(0, 0, 0, 0.9) 120px);
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: multiply;
+}
+

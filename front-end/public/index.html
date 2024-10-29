@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpoOOOky ArCaDe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='spooky.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&display=swap">
+</head>
+<body>
+    <div id="arcade-container">
+        <div id="arcade-ghostRunner">
+            <!-- Ghost Runner -->
+            <h1>🎃 Ghost Runners 🎃</h1>
+            <h4>By Jesal</h4>
+            <p>Put a finger up to move up and a finger down to move down. Change lanes to avoid ghosts! Reach the end if you dare!</p>
+            <img src="{{ url_for('static', filename='ghostRunner_thumb.gif') }}" alt="Ghost Runners game thumbnail">
+            <form action="/run-ghostRunner" method="post">
+                <button type="submit">Boo!</button>
+            </form>
+        </div>
+
+        <div id="arcade-dino">
+            <h1>🎃 Spooky Dino Game 🎃</h1>
+            <p>To play, hold your fist upwards in front of your webcam. To make the dino jump over obstacles, quickly open and close your hand!</p>
+            <img src="{{ url_for('static', filename='dino_thumb.gif') }}" alt="Dino game thumbnail">
+            <form action="/run-dino" method="post">
+                <button type="submit">Boo!</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="flashlight-overlay"></div>
+    <script src="{{ url_for('static', filename='flashlight.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"mouseOver",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"mouseOver",
+  "parent":{
+    "name":"oEMP",
+    "path":"folders/Objects/oEMP.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
