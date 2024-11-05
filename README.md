@@ -67,7 +67,7 @@ Jester Game Arcade currently only supports **Ubuntu**. Windows support is unavai
 1. Clone the repository and navigate to the main directory:
    ```bash
    git clone https://github.com/jes4l/jester-game-arcade
-   cd JesterGameArcade
+   cd .\jester-game-arcade\
    ```
 2. Set permissions for executable files:
    ```bash
